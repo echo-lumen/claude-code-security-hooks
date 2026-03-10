@@ -130,6 +130,13 @@ Test a specific case:
 npx claude-hooks-test verify --tool Bash --command "rm -rf /" --expect deny
 ```
 
+## Related
+
+- [claude-code-memory](https://github.com/echo-lumen/claude-code-memory) — PostToolUse hook that builds project knowledge from tool interactions (observational memory)
+- [claude-hooks-test](https://github.com/echo-lumen/claude-hooks-test) — Test harness for Claude Code hooks (22 built-in security scenarios)
+- [mcp-security-scan](https://github.com/echo-lumen/mcp-security-scan) — OWASP MCP Top 10 security scanner for MCP servers
+- [mcp-doctor](https://github.com/echo-lumen/mcp-doctor) — Health check CLI for MCP servers
+
 ## Requirements
 
 - Claude Code with hooks support
