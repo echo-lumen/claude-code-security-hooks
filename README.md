@@ -114,6 +114,22 @@ When enabled, every tool call is logged to `~/.claude/security-audit.log`:
 
 For MCP server security, see [mcp-security-scan](https://github.com/echo-lumen/mcp-security-scan).
 
+## Testing Your Hooks
+
+Use [claude-hooks-test](https://github.com/echo-lumen/claude-hooks-test) to verify these hooks work correctly without running Claude Code:
+
+```bash
+npx claude-hooks-test run --project .
+```
+
+Runs 22 built-in security scenarios and reports pass/fail for each. All 22 pass against this hook out of the box.
+
+Test a specific case:
+
+```bash
+npx claude-hooks-test verify --tool Bash --command "rm -rf /" --expect deny
+```
+
 ## Requirements
 
 - Claude Code with hooks support
